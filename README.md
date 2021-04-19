@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [github.com/mcclintsayshi/3-column-preview-card](https://github.com/mcclintsayshi/3-column-preview-card)
+- Live Site URL: [mcclintsayshi.github.io/3-column-preview-card](https://mcclintsayshi.github.io/3-column-preview-card/)
 
 ## My process
 
