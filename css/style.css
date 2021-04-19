@@ -100,11 +100,18 @@ body {
   color: var(--very-light-grey);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .card .link {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
+    padding: 15px 35px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card .link {
+    padding: 12.5px 25px;
   }
 }
 
