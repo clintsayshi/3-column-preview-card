@@ -17,39 +17,41 @@ body {
 
 .cards {
   display: flex;
-  margin: 100px auto;
-  border-radius: 10px !important;
+  margin: 5rem auto;
+  border-radius: 0.625rem !important;
   width: 60%;
   position: relative;
 
   @media screen and (max-width: 1024px) {
-    margin-top: 150px auto;
+    margin-top: 9rem auto;
     width: 80%;
   }
   @media screen and (max-width: 768px) {
-    margin: 50px auto;
+    margin: 3rem auto;
     flex-direction: column;
     width: 65%;
   }
   @media screen and (max-width: 600px) {
-    margin: 50px auto;
+    margin: 3rem auto;
     flex-direction: column;
     width: 90%;
   }
 }
 
 .card {
-  padding: 50px;
-  --gap: 20px; // bottom margin fo heading and desc
+  padding: 3rem;
+  --gap: 1.25rem; // bottom margin fo heading and desc
+  display: flex;
+  flex-direction: column;
 
   .icon {
-    width: 50px;
+    width: 3rem;
     margin-bottom: var(--gap);
   }
 
   .heading {
-    font-family: "Big Shoulders Display", cursive;
-    font-size: 40px;
+    font-family: "Big Shoulders Display", sans-serif;
+    font-size: 2.5rem;
     font-weight: 700;
     text-transform: uppercase;
     color: var(--very-light-grey);
@@ -60,55 +62,64 @@ body {
   .desc {
     font-family: "Lexend Deca", sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 1rem;
     color: var(--transparent-white);
 
-    margin-bottom: 50px;
+    margin-bottom: 3rem;
   }
 
   .link {
     display: block;
+    padding: 0.85rem 1.6rem;
+    margin-top: auto;
+    border: 0.125rem solid var(--very-light-grey);
+    border-radius: 1.875rem;
+
     font-family: "Lexend Deca", sans-serif;
     font-weight: 400;
     text-decoration: none;
     text-align: center;
-    border-radius: 30px;
-    padding: 12.5px 25px;
     background-color: var(--very-light-grey);
-    border: 2px solid var(--very-light-grey);
     transition: 0.3s ease-in-out;
 
     &:hover {
       color: var(--very-light-grey);
     }
 
+    &:focus-visible {
+      border: 0.125rem solid black;
+      outline: none;
+    }
+
     @media screen and (max-width: 768px) {
       width: max-content;
-      padding: 15px 35px;
+      padding: 1rem 2.1rem;
     }
 
     @media screen and (max-width: 600px) {
-      padding: 12.5px 25px;
+      padding: 0.85rem 1.6rem;
     }
   }
 
+  --border-radius: 0.625rem;
+
   &:nth-child(1) {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
 
     @media screen and (max-width: 768px) {
       border-bottom-left-radius: 0;
-      border-top-right-radius: 10px;
+      border-top-right-radius: var(--border-radius);
     }
   }
   &:nth-last-child(1) {
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
+    border-bottom-right-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
 
     @media screen and (max-width: 768px) {
       border-top-right-radius: 0;
-      border-bottom-left-radius: 10px;
-      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: var(--border-radius);
+      border-bottom-right-radius: var(--border-radius);
     }
   }
 }
@@ -149,7 +160,7 @@ body {
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 0.6875rem;
   text-align: center;
 }
 .attribution a {
